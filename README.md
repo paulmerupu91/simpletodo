@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## How it works
+
+This application uses localStorage to store the data.
+
 ## Available Scripts
 
 In the project directory, you can run:
