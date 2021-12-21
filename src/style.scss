@@ -1,0 +1,129 @@
+h1, h2, h3, h4, h5{
+    font-family: 'Roboto Slab', serif;
+}
+
+html, body, #root{
+    height: 100%;
+}
+
+#root, .container{
+    box-sizing: border-box;
+}
+
+body, input{
+    font-family: 'Source Sans Pro', sans-serif;
+    background: #ececec;
+}
+
+.container{
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+$box-shadow: 0px 4px 8px 0 rgba( 0, 0, 0, .19 );
+
+.add-todo{
+    display: flex;
+    margin-top: 2em;
+    margin-bottom: 3em;
+    border-radius: 20px;
+    max-width: 300px;
+    box-shadow: $box-shadow;
+    overflow: hidden;
+
+    input{
+        border: none;
+        padding: 10px 15px;
+        flex-grow: 5;
+        background: #f8f8f8;
+        
+        &:focus-visible{
+            // outline: none !important;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+    }
+
+    button{
+        border: none;
+        padding: 10px 20px 10px 15px;
+        color: #fff;
+        background: rgb(51, 179, 184);
+        z-index: 10;
+        cursor: pointer;
+    }
+}
+
+.todo, .done-todo{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ececec;
+    margin-top: .8em;
+    margin-bottom: .8em;
+    justify-content: space-between;
+
+    span{
+        display: inline-flex;
+
+    }
+
+    .todo-actions{
+        display: flex;
+        margin-right: -12px;
+    }
+
+    .text-decoration-line-through {
+        text-decoration: line-through!important;
+    }
+}
+
+.action-button{
+    border: none;
+    padding: 5px 7px;
+    margin-right: 2px;
+    color: rgb(155, 155, 155);
+    cursor: pointer;
+    background: transparent;
+    border-radius: 4px;
+
+    &:hover{
+        background: #fff;
+        color: rgb(97, 97, 97);
+    }
+}
+
+.footer{
+    margin-top: 4em;
+    padding-bottom: 4em;
+}
+
+ul{
+    margin-left: 0px;
+    padding-left: 0px;
+    list-style-type: none;
+
+    li{
+        display: flex;
+        align-items: center;
+        
+        margin-bottom: .6em;
+
+        svg{
+            margin-right: 1em;
+        }
+    }
+}
+
+.git{
+    display: flex;
+    align-items: center;
+    
+    svg{
+        margin-right: 1em;
+    }
+}
